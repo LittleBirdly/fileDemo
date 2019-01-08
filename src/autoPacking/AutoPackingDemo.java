@@ -42,7 +42,7 @@ public class AutoPackingDemo {
 		public static void main(String[] args) throws Exception { 
 			List<String> fileNameList = new ArrayList<String>(); 
 			
-			fileNameList.add("OldReturnServiceImpl.java");  
+			fileNameList.add("OldReturnServiceImpl.java");   
 
 			copyFiles(fileNameList);    
 		}
