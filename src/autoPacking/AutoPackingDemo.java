@@ -37,7 +37,7 @@ public class AutoPackingDemo {
 		
 		public static String desPath="E:/项目文件/合众开发/10.生产环境更新计划/增量包";//补丁文件包存放路径
 		
-		public static String version="20190104/5.0/";//补丁版本
+		public static String version="20190107/1.0/";//补丁版本
 		
 		public static void main(String[] args) throws Exception { 
 			List<String> fileNameList = new ArrayList<String>(); 
