@@ -44,7 +44,7 @@ public class AutoPackingDemo {
 			
 			fileNameList.add("OldReturnServiceImpl.java");
 
-			copyFiles(fileNameList);	
+			copyFiles(fileNameList);    
 		}
 		
 		public static List<String> getPatchFileList() throws Exception{
