@@ -1,23 +1,10 @@
 package autoPacking;
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-
 import filedemo.FilesDemo;
 import filedemo.MyFilenameFilter;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /***
  * 半自动打增量包工具
@@ -28,23 +15,23 @@ public class AutoPackingDemo {
 	 
 		public static String patchFile="D:/patch.txt";//补丁文件,由eclipse svn plugin生成
 		
-//		public static String projectPath="E:\\ecploseOxygenWorkSpace\\Hozon_inter_NewDev";//项目文件夹路径-接口
-		public static String projectPath="E:\\ecploseOxygenWorkSpace\\Hozon_newDev";//项目文件夹路径-业务
+		public static String projectPath="C:\\Chen\\Work\\DevelopmentEnvironment\\ecploseIDEWorkSpace\\hadms_prod";//项目文件夹路径-业务
 		
 		public static String webContent="WebContent";//web应用文件夹名
 		
 		public static String classPath="D:/workspace/FordClubJeeCms/build";//class存放路径
 		
-		public static String desPath="E:/项目文件/合众开发/10.生产环境更新计划/增量包";//补丁文件包存放路径
+		public static String desPath="C:\\Chen\\Work\\项目文件\\徐州弘安DMS\\doc\\07_生产环境更新计划\\增量包";//补丁文件包存放路径
+//		public static String desPath="C:\\Users\\a2526\\Desktop";//补丁文件包存放路径
 		
-		public static String version="20190107/1.0/";//补丁版本
+		public static String version="20190822/1.0/";//补丁版本1
 		
 		public static void main(String[] args) throws Exception { 
 			List<String> fileNameList = new ArrayList<String>(); 
 			
-			fileNameList.add("OldReturnServiceImpl.java");   
+			fileNameList.add("PartBaseServiceImpl.java");
 
-			copyFiles(fileNameList);      
+			copyFiles(fileNameList); 
 		}
 		
 		public static List<String> getPatchFileList() throws Exception{
